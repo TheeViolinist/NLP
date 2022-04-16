@@ -187,7 +187,8 @@ def dados_similarity(docs: list, resumos: list):
     print(f'Os índices são: {indice_maior_comparacao_primeiro} e {indice_maior_comparacao_segundo}')
     print(f'Os títulos dos trabalhos são: : {resumos[indice_maior_comparacao_primeiro]["titulo"]}')
     print(f'e {resumos[indice_maior_comparacao_segundo]["titulo"]}')
-    print(resumos[indice_maior_comparacao_primeiro])
+    #print(resumos[indice_maior_comparacao_primeiro])
+    print(docs[indice_maior_comparacao_primeiro].text)
     return similarity
             
 
