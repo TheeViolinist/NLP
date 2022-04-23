@@ -1,0 +1,2 @@
+Fazer lematização das palavras e criar um texto lematizado
+
