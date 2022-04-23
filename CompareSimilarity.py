@@ -189,6 +189,9 @@ def dados_similarity(docs: list, resumos: list):
     print(f'e {resumos[indice_maior_comparacao_segundo]["titulo"]}')
     #print(resumos[indice_maior_comparacao_primeiro])
     print(docs[indice_maior_comparacao_primeiro].text)
+
+
+    print(f'\n\n {similarity[1045][1046]}')
     return similarity
             
 

@@ -1,0 +1,33 @@
+
+import spacy
+
+nlp = spacy.load("pt_core_news_lg")
+
+doc1 = nlp("Eu fui ao bar brincar")
+doc2 = nlp("Nós fomos ao bar matar pessoas")
+
+
+
+
+
+
+def remove_stop_words(doc):
+    resume: str = ''
+
+
+    for token in doc:
+        if not token.is_stop:
+            resume += ' ' + token.text
+    
+
+    return resume
+
+
+doc1 = nlp(remove_stop_words(doc1))
+doc2 = nlp(remove_stop_words(doc2))
+
+
+print(f'1: {doc1}')
+print(f'2: {doc2}')
+
+print(doc1.similarity(doc2))
